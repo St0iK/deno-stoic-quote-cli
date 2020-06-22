@@ -1,15 +1,16 @@
 import { IQuote } from "./types.d.ts";
 // Importing colors
-import { red, bold, cyan } from "./deps.ts";
+import { green, bold, cyan, yellow } from "./deps.ts";
 
 export const displayHelp = (): void => {
-  console.log(`Usage: Stoic Quotes CLI [filters]\n`);
+  console.clear();
+  console.log(`Usage: Stoic Quotes CLI\n`);
   console.log(`Optional flags:`);
   console.log(
     `${bold("-h, --help")}\t Shows this help message and exits`,
   );
   console.log(
-    `${bold("-s, --stoic")}\t Find a quote by a specific stoic ex. ${
+    `${bold("-a, --author")}\t Find a quote by a specific stoic ex. ${
       cyan("Epictitus")
     }`,
   );
@@ -24,12 +25,9 @@ export const displayHelp = (): void => {
 
 export const displayQuote = (quote: IQuote): void => {
   console.log(
-    `${bold(quote.text)}`,
+    `${bold(quote.text)} \n\n - ${
+      cyan(bold(quote.author))
+    } \n=======================================
+    `,
   );
-
-  console.log(
-    `${bold(quote.author)}`,
-  );
-
-  Deno.exit();
 };
