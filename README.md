@@ -34,7 +34,7 @@ deno install --allow-read -n stoic-cli https://raw.githubusercontent.com/St0iK/d
 
 ## Usage
 
-Run `news-cli` in your terminal followed by any of the filters
+Run `stoic-cli` in your terminal followed by any of the filters
 
 ```
 Usage: Stoic Quotes CLI
