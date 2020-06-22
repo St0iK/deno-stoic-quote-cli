@@ -19,7 +19,7 @@
 You can download the executable directly from GitHub.
 
 ```
-deno install --allow-read -n stoic-cli https://github.com/St0iK/deno-stoic-quote-cli/blob/master/mod.ts
+deno install --allow-read -n stoic-cli https://raw.githubusercontent.com/St0iK/deno-stoic-quote-cli/master/mod.ts
 ```
 
 ## Features
