@@ -1,3 +1,4 @@
+import { IQuote } from "./types.d.ts";
 // Importing colors
 import { red, bold, cyan } from "./deps.ts";
 
@@ -16,6 +17,18 @@ export const displayHelp = (): void => {
     `${bold("-c, --contains")}\t Find a quote that contains this word ex. ${
       cyan("life")
     }`,
+  );
+
+  Deno.exit();
+};
+
+export const displayQuote = (quote: IQuote): void => {
+  console.log(
+    `${bold(quote.text)}`,
+  );
+
+  console.log(
+    `${bold(quote.author)}`,
   );
 
   Deno.exit();
